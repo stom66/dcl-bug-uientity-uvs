@@ -18,6 +18,10 @@ This scene renders three side-by-side panels using the same UV grid texture:
 
 **Actual:** Panels 1 and 2 look identical -- the `uvs` value is completely ignored in `stretch` mode. Panel 3 differs only because `center` mode displays the texture at its native resolution, but it too ignores the UVs; the visible portion is determined solely by the element size, showing the center of the full texture rather than the center of the cropped region the UVs should define.
 
+**Note:** The IDE tooltip for the `uvs` property states that `textureMode` must be set to `stretch` for UVs to be configurable. Panel 2 meets this requirement exactly, yet the UVs still have no effect.
+
+![Screenshot of the IDE hint](ide-preview.png)
+
 ## Running the Scene
 
 This is a standard Decentraland SDK 7 scene and can be run like any other.
